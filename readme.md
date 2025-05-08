@@ -44,12 +44,14 @@ This Chrome extension allows users to **save and load form input states by profi
 
 ```
 form-state-saver/
-├── manifest.json        # Chrome extension config
-├── popup.html           # Popup UI
-├── popup.js             # Handles save/load button events
-├── content.js           # Main logic injected into each page
-├── styles.css           # Popup styling
-└── icons/               # (Optional) Extension icon set
+├── background.js   # Background script for installation event logging
+├── content.js      # Injected into pages to manage form state
+├── icon.png        # Extension icon (used in toolbar)
+├── manifest.json   # Chrome extension configuration
+├── popup.html      # UI for saving/loading profiles
+├── popup.js        # Handles popup UI logic and communicates with content script
+├── readme.md       # Project documentation
+├── style.css       # Styling for popup.html
 ```
 ---
 
